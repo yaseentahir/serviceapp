@@ -1,0 +1,7 @@
+<h2>This is the list of Top African Music Artists</h2>
+<ul>
+  <li *ngFor="let artist of artists; let i = index">
+    {{ artist.name }} who is currently number {{ artist.grade }}
+    <button (click)="incrementGrade(i)">+1</button>
+  </li>
+</ul>
